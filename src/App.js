@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import AddTask from './components/AddTask';
 // import { collection, query, onSnapshot, doc, updateDoc, deleteDoc, } from "firebase/firestore";
@@ -8,12 +8,13 @@ import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import Calendar from './components/Calendar';
 import Categories from './components/Categories';
-import EditTodo from './components/EditTodo';
+import EditTask from './components/EditTask';
 import User from './components/User';
 import TodoList from './components/TodoList';
 import Logout from './components/Logout';
 
 function App() {
+
   return (
     <div className='App'>
       <Sidebar>
@@ -26,7 +27,7 @@ function App() {
 
       <Main>
         <TodoList />
-        <EditTodo />
+        <EditTask />
       </Main>
     </div>
   )
